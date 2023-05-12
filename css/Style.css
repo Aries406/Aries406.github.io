@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+    box-sizing: border-box;
+}
+
+header,
+section {
+    overflow-x: hidden;
+}
+
+:root {
+    --Sniglet-font: "Sniglet", cursive;
+    --Rubik: "Rubik", cursive;
+    --Patua: "Patua One", cursive;
+    --Lobster: "lobster", cursive;
+    --Gelasio: "Gelasio", cursive;
+    --Raleway: "Raleway", cursive;
+    --light-black: #2e2c2caf;
+    --bggradient: linear-gradient(to top, #000000, #ffff);
+    --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header a {
+    font-family: var(--Sniglet-font);
+    font-size: 0.9em;
+    color: whitesmoke;
+}
+
+header .fa-align-right,
+header .fa-search {
+    color: #fff;
+}
+
+header .fa-search:hover {
+    color: rgba(255, 255, 255, 0.479);
+}
+
+header .btn:hover {
+    background-color: rgb(78, 70, 70);
+}
+
+.dropdown_content {
+    display: none;
+    position: relative;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(192, 179, 179, 0.2);
+    margin-top: auto;
+    z-index: 1;
+}
+
+header .dropdown_content a {
+    color: rgb(255, 253, 253);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+header .dropdown_content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+header .nav-item:last-child {
+    padding-right: 10.5em;
+}
+
+header .nav-item {
+    padding: 0.9em;
+}
+
+header .navbar-brand {
+    padding-left: 8rem;
+}
+
+header .navbar {
+    background-color: rgb(2, 2, 2);
+}
+
+.btn_search {
+    border-color: black;
+    font-weight: bold;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: black;
+}
+
+.carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: black;
+}
+
+
+/********** section 1 **************/
+
+.section-1 {
+    padding: 5vmin 0vmin;
+}
+
+.section-1 .cards_size .alert {
+    background: linear-gradient(to bottom, rgb(252, 251, 255), rgb(1, 18, 32));
+}
+
+.section-1 .cards_size .alert h1 {
+    padding-bottom: 0.1em;
+    font-size: 3rem;
+    font-family: var(--Gelasio);
+    color: red;
+}
+
+.section-1 .cards_size .alert p {
+    padding-bottom: 0.1em;
+    font-size: 1rem;
+    font-family: var(--Gelasio);
+    color: rgb(248, 247, 247);
+}
+
+.section-1 .cards_size .cards .card {
+    width: 22rem;
+    margin: 3vmin 3vmin;
+}
+
+.nav-tabs>li.nav-item>a {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+.nav>li.nav-item>a:focus {
+    border-bottom: 3px solid #130222;
+    color: #000000;
+}
+
+
+/* .nav-tabs>li {
+    float: none;
+    display: inline-block;
+    zoom: 1;
+}
+
+.nav-tabs {
+    text-align: center;
+}
+ */
+
+
+/*  Section 2  */
+
+.section-2 h1 {
+    font-size: 3rem;
+    font-family: var(--Gelasio);
+    color: black;
+}
+
+.carousel-slide {
+    display: flex;
+}
+
+.cover {
+    width: 100%;
+    height: 55vmin;
+    background: url("../assets/Myphoto2.JPG");
+    background-position: -24rem -19rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.cover .content {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding-top: 19vmin;
+}
+
+.section-2 .cover .content>h1 {
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover _content>p {
+    font-family: var(--Rubik);
+    font-size: 2vmin;
+    color: #e5e5e5;
+}
+
+.section-2 .cards_size .alert h1 {
+    padding-bottom: 0.1em;
+    font-size: 3rem;
+    font-family: var(--Gelasio);
+    color: red;
+}
+
+.numbers .rect {
+    position: relative;
+    z-index: 1;
+    background: white;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(184, 33, 104, 0.349)
+}
+
+.numbers {
+    margin-top: -15vmin;
+}
+
+.numbers .rect h1 {
+    font-size: 5rem;
+    color: rgb(16, 79, 214);
+}
+
+.numbers .rect>p {
+    font-family: "Montserrat";
+}
+
+.section-2 .cards .card {
+    width: 15rem;
+    margin: 1vmin 1vmin;
+}
+
+
+/* Section 3 */
+
+.section-3 {
+    height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+
+.section-3 .col-md-12>h1 {
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+
+.section-3 .col-md-12>p {
+    padding: 0 4em;
+    padding-bottom: 2em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+
+.section-3 .desktop {
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.section-3 .desktop h3 {
+    font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+    font-size: 2vmin;
+}
+
+
+/* Section Team */
+
+.section-4 .container h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+
+.section-4 .team {
+    padding: 10vmin 4vmin;
+}
+
+.section-4 .card {
+    width: 22em;
+    margin-top: 10vmin;
+}
+
+.section-4 .card .card-text {
+    padding: 0.5em;
+}
+
+.section-4 .card-body>a {
+    font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+    padding-left: 3rem;
+}
+
+.border-radius {
+    border-radius: 340px;
+    width: 60%;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.815);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+}
+
+footer p>span {
+    color: #ff512f;
+}
+
+footer input {
+    border: none !important;
+}
+
+footer input::placeholder {
+    color: white !important;
+}
+
+footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .column i {
+    color: #dd2476;
+}
+
+
+/* It is Adjacent sibling combinator */
+
+footer .column i+i {
+    padding: 0 0.5em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
+
+.site-slider-two {
+    position: relative;
+    height: 30%;
+}
+
+.site-slider-two .products {
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-slider-two .products img {
+    width: 90%;
+    margin: auto;
+}
+
+.site-btn.btn-span {
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid;
+    background-color: white;
+}
